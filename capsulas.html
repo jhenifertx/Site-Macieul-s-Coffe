@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Macieul's Coffee</title>
+    <link rel="shortcut icon" href="imagens/icon.png" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+          <script>
+		   
+        $(function() {
+          $(window).on("scroll", function() {
+            if($(window).scrollTop() > 30) {
+              $(".sidebar-wrapper").addClass("novacor");
+            } else {
+              $(".sidebar-wrapper").removeClass("novacor");
+            }
+          });
+        });
+       
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+          });
+        
+            $(document).ready(function(){
+                $('.modal').modal();
+              });
+        
+          $('#textarea1').val('New Text');
+              M.textareaAutoResize($('#textarea1'));
+                    $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+          });
+       
+        
+    </script>
+    
+    <script type="text/javascript">
+		
+		    $(document).ready(function(){
+				$('.tooltipped').tooltip();
+                $('.parallax').parallax();
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('.dropdown-trigger').dropdown();
+                $('.fixed-action-btn').floatingActionButton();
+				 $('.slider').slider({full_width: true});
+            });
+            
+             $('.carousel').carousel({
+                fullWidth: true,
+                indicators: true
+              });
+
+        
+            $(document).ready(function(){
+
+                $('.slider').slider({ 
+                    full_width: true,
+                    height : 320, // default - height : 400
+                    interval: 7000 // default - interval: 6000
+                });
+
+            });
+            
+    </script>
+    
+    <script>    
+            
+
+        
+            
+    </script>
+    
+    
+  <div id="modal1" class="modal">
+    
+    <div class="modal-content">
+    
+        <a href="#!" class=" right modal-close waves-effect waves-green btn-flat">
+        <span class="material-icons">close</span></a>
+        <h4>Envie-nos uma mensagem</h4>
+        <p>Preencha os campos abaixo</p>
+       
+        <div class="row">
+        
+             <form class="col s12">
+
+                <br>    
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">account_circle</i>
+                        <input id="input_text" type="text" data-length="10">
+                        <label for="input_text">Nome</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">email</i>
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Digite um e-mail válido" data-success="E-mail válido"></span>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">comment</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensagem</label>
+                    </div>
+
+                  </div>
+
+              </form>
+        
+        </div>
+      
+            <button class="btn btn-small waves-effect waves-light btn-envio" type="submit" name="action">Enviar
+            </button>
+            <br>
+   
+    </div>
+   
+    
+</div>
+
+
+    <div class="row hide-on-small-only" style="background-color:#fff; margin:0px!important; font-size:11px;">
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	Atendimento delivery
+      </div>
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	<span class="material-icons icons">airport_shuttle</span>Entregas para Lins e região
+      </div>
+      
+      <div class="col s3 l4 hide-on-med-and-down" style="margin-top:0.4em!important;">
+      
+          <a href="https://www.facebook.com/" class="brand-logo" ><img src="imagens/facebook.png" width="22"></a>
+          <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="22"></a>
+          <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="22"></a><a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="22"></a>
+          <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="22"></a>
+                     
+      </div>
+      
+    </div>
+    
+    
+    <div class=" navbar-fixed">
+       
+        <nav class=" sidebar-wrapper z-depth-0 transparent">
+
+            <div class="nav-wrapper transparent z-depth-0">
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-menu" style="font-size:40px!important;">menu</i></a>
+  
+               
+               <ul class="right hide-on-med-and-down">
+                   
+                     <li><a href="#" class="disable" style="font-size:28px; margin-right:-15px;">|</a></li>
+                     <li><a href="login.html" class="waves-effect waves-light" ><span class="material-icons icon-login">person</span></a></li>                        
+                </ul>
+                  
+                <ul class="right hide-on-med-and-down">
+                   
+                     <!-- Dropdown Trigger -->
+                    <li><a href="index.html" class="waves-effect waves-light" ><span class="material-icons icons">home</span>Início</a></li>
+
+                     <li><a href="capsulas.html" class="waves-effect waves-light" ><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+                      <a class='dropdown-trigger btn btn-p waves-effect waves-light transparent' href='#' data-target='dropdown1'>CARDÁPIO</a>
+                        
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+    
+                      </ul>
+                     
+                </ul>
+                 
+          <ul class="left img-logo">
+            
+            <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="200" class="responsive-img"></a>
+            
+          </ul>
+        
+
+           <ul class="left  hide-on-med-and-down cf">
+            
+              <div class="row">
+                  <div class="col s12" >
+                      <div class="row" id="topbarsearch">
+                          <div class="input-field col s12 white-text">
+                              <i class="white-text material-icons prefix icon-search">search</i>
+                                  <input type="text" placeholder="Procurar" id="autocomplete-input" class="autocomplete white-text " >
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+            
+           </ul>
+        
+         </div>
+         
+      </nav>
+      
+		<ul class="sidenav" id="mobile-demo">
+               
+						<li><a href="index.html"class="waves-effect waves-light brown-text" ><span class="material-icons icons">home</span>Início</a></li>
+						<li class="divider" tabindex="-1"></li>
+						<li><a href="login.html" class="waves-effect waves-light brown-text" ><span class="material-icons icons">person</span>Login</a></li>
+						<li class="divider" tabindex="-1"></li>
+						 <li><a href="capsulas.html" class="brown-text "><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+						 <li class="divider" tabindex="-1"></li>
+						  
+						  <li class="btn-p2">CARDÁPIO</li>
+						  <li class="divider" tabindex="-1"></li>
+                       
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+		</ul>
+                
+        
+</div> 
+
+        
+       
+        <div class="slider">
+           
+            <ul class="slides">
+             
+                <li>
+                    <img src="imagens/4.jpg" class="responsive-img">                  
+                </li>
+                
+                <li>  
+                    <img src="imagens/8.jpg"> 
+                </li>
+                
+                <li>
+                    <img src="imagens/c.jpg"> 
+                </li>
+             
+            </ul>
+            
+        </div>
+
+
+  <div class="cont">
+   
+  
+  <br>
+  <hr>
+          
+      <div class="row">
+        
+        <br>
+                       
+            <div style="background-color:#F2E8C9; padding:3px; margin-top:5px;"><h5 class="titulo">CÁPSULAS</h5></div>
+             <br>      
+            <h5 class="titulo center">3 CORAÇÕES</h5>
+            <br>
+   
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c1.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Espresso Atento<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 10,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Espresso Atento<i class="material-icons right">close</i></span>
+             <p class="descricao">Especialmente elaborado para apreciadores de cafés intensos. Com grãos cultivados nas regiões mais tradicionais do Brasil, Cerrado Mineiro, Sul de Minas Gerais e Espírito Santo, é um blend com predominância de cafés arábica. Bebida de corpo elevado, acidez média e sabor marcante, com notas intensas de caramelo e leve sabor frutado.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c2.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Cappuccino Doce de Leite<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 17,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Cappuccino Doce de Leite<i class="material-icons right">close</i></span>
+             <p class="descricao">Cappuccino Doce de Leite Havanna TRES, uma bebida deliciosa e saborosa, que une a energia do café, a cremosidade do cappuccino e a indulgência do tradicional Dulce de Leche Havanna. Surpreenda-se!</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c3.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Espresso Regiões do Mundo Sumatra<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$ 20,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Espresso Regiões do Mundo Sumatra<i class="material-icons right">close</i></span>
+             <p class="descricao">Nossos especialistas em café encontraram em Lintong Batak um café de personalidade marcante, com características únicas. Localizada ao norte da Ilha de Sumatra, próxima ao lago Toba, seu nome combina a região Lintong com as pessoas que vivem ali, conhecidas como Batak. O Espresso Sumatra TRES® é um café de aroma adocicado, com notas amadeiradas e de especiarias levemente picantes, apresenta baixa acidez e corpo médio.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c4.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Espresso Forza<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 17,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Espresso Forza<i class="material-icons right">close</i></span>
+             <p class="descricao">Blend que une a delicadeza aromática do café arábica com a força do robusta, proporcionando uma intensidade 10. Produzido com uma seleção de cafés cultivados no Cerrado Mineiro e no Espírito Santo, esse espresso intenso e marcante possui notas de castanha torrada, caramelo e chocolate amargo.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+	  
+	  
+	        <div class="row">
+        
+        <br>
+   
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c5.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Latte Macchiato<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 18,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Latte Macchiato<i class="material-icons right">close</i></span>
+             <p class="descricao">Latte Macchiato é uma bebida levemente adocicada, muito cremosa e suave, feita com leite e um toque de café.  Se você gosta do café com leite TRES vai adorar esse lançamento!</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c6.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Chocolatto Caramello<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 17,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Chocolatto Caramello<i class="material-icons right">close</i></span>
+             <p class="descricao">Chocolate quente cremoso com um toque generoso de caramelo. Combinação especial e muito saborosa.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c7.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café com Leite<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$ 18,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Café com Leite<i class="material-icons right">close</i></span>
+             <p class="descricao">Bebida cremosa que une a força do café com a suavidade do leite.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/3c8.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Cappuccino Classic<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 17,98</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Cappuccino Classic<i class="material-icons right">close</i></span>
+             <p class="descricao">Com sabor Inesquecível o Cappuccino TRES® é uma deliciosa bebida cremosa composta por café, leite, cacau e canela.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+             
+             
+             
+             
+             
+             
+       <div class="row">
+        
+        <br>
+                       
+                 
+            <h5 class="titulo center">NESCAFE DULCE GOSTO</h5>
+            <br>
+            
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c1.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Espresso<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Espresso<i class="material-icons right">close</i></span>
+             <p class="descricao">Você vai adorar este Espresso delicado, porém marcante, com sua aveludada espuma e seu toque frutado. Experimente o café arábica premium do Bras</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c2.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">RISTRETTO<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">RISTRETTO<i class="material-icons right">close</i></span>
+             <p class="descricao">Uma pequena dose do café dos deuses, o Ristretto não é um espresso qualquer. Você vai amar o aroma rico e intenso por trás do café espesso e da espuma densa. Saboreie esta mistura de torrefação média de café premium arábica do Brasil e robusta do Vietnã.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c3.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">NESCAU<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">NESCAU<i class="material-icons right">close</i></span>
+             <p class="descricao">O delicioso NESCAU® que você já conhece, prático e nutritivo para o café da manhã de toda a família.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c4.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">CAPPUCCINO<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">CAPPUCCINO<i class="material-icons right">close</i></span>
+             <p class="descricao">Um clássico italiano pronto em questão de segundos. Você vai adorar a camada generosa e sedutora de espuma de leite integral se encontrando com um espresso intenso, feito com os melhores grãos de café.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	         <div class="row">
+        
+
+            <br>     
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c5.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">LATTE MACCHIATO<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">LATTE MACCHIATO<i class="material-icons right">close</i></span>
+             <p class="descricao">Descubra três camadas de pura delícia. Leite quente e suave com uma espuma densa complementam essa mistura de grãos puros Arábica e Robusta premium. Só um minuto de preparo e todo o tempo do mundo para apreciar nosso latte espetacular.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c6.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">CAFFÈ MATINAL<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">CAFFÈ MATINAL<i class="material-icons right">close</i></span>
+             <p class="descricao">Mais uma excelente razão para despertar, este café dá o pontapé inicial no seu dia com seu sabor intenso e aromático finalizado com uma espuma suave.
+Saboreie o porquê esse café feito com os nossos melhores grãos de café Arábica e Robusta é amado pelos brasileiros.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c7.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">LUNGO<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">LUNGO<i class="material-icons right">close</i></span>
+             <p class="descricao">Você vai adorar o aroma frutado e torrado que encontrará depois da deliciosa espuma desta versão mais longa do espresso. Descubra a intensidade levemente picante dessa bebida de torrefação média-escura feita com grãos 100% arábica.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/c8.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">MOCHACCINO CANELA<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">MOCHACCINO CANELA<i class="material-icons right">close</i></span>
+             <p class="descricao">O toque da canela nunca foi tão importante na mistura com o café, o leite e o chocolate. A verdadeira mistura que deu certo.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+	  
+	  
+	        <div class="row">
+        
+        <br>
+                       
+                 
+            <h5 class="titulo center">STARBUCKS</h5>
+            <br>
+   
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/starbucks5.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">STARBUCKS ESPRESSO ROAST<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 22,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">STARBUCKS ESPRESSO ROAST<i class="material-icons right">close</i></span>
+             <p class="descricao">Descubra as notas ricas e caramelizadas do STARBUCKS® Espresso Dark Roast, o café presente nos famosos lattes da marca. Você vai adorar a intensidade desse café único, pronto em apenas alguns segundos com a sua máquina NESCAFÉ® Dolce Gusto®</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/starbucks6.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">STARBUCKS LATTE MACCHIATO<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 23,99</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">STARBUCKS LATTE MACCHIATO<i class="material-icons right">close</i></span>
+             <p class="descricao">Descubra o STARBUCKS® Latte Macchiato, concebido especialmente para as máquinas NESCAFÉ® Dolce Gusto®. Um latte suave e cremoso, com espresso, leite quente e uma generosa crema.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/starbucks7.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">STARBUCKS CAPPUCCINO<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$ 24,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">STARBUCKS CAPPUCCINO<i class="material-icons right">close</i></span>
+             <p class="descricao">Saboreie o STARBUCKS® Cappucino encorpado e cremoso que combina o espresso com torrefação escura e uma camada cremosa de leite, criado para as máquinas NESCAFÉ® Dolce Gusto®.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/capsulas/starbucks4.png">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">STARBUCKS BLONDE ESPRESSO ROAST<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 24,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">STARBUCKS BLONDE ESPRESSO ROAST<i class="material-icons right">close</i></span>
+             <p class="descricao">Saboreie as notas delicadas e doces do STARBUCKS® Blonde Espresso Roast, o espresso mais leve do Starbucks®.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+    <br>   
+    <hr>
+    <br>  
+                    
+</div>         
+             
+ 
+       <div class="fixed-action-btn" >
+              <a class="btn-floating btn-large pulse tooltipped modal-trigger" data-position="left" data-tooltip="Envie uma mensagem" style="background-color:rgba(204, 174, 98,1.0);" href="#modal1">
+                <i class="large material-icons">comment</i>
+              </a>
+              
+              <ul>
+                <li>
+                	<a class="btn-floating btn-large tooltipped" data-position="left" data-tooltip="Faça seu pedido online" style="background-color:rgba(204, 174, 98,1.0);" href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1" target="_blank"><i class="material-icons">call</i></a>
+                </li>
+              </ul>
+        </div>
+        
+
+</div>
+        
+       
+             
+    <footer class="page-footer" style="background-color:#0D0D0D;">
+         
+        <div class="container">
+           
+            <div class="row">
+
+                  <div class="col l6 s12" style="margin-top:5%;">
+                        <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="150" ></a>
+                        <h5 class="white-text">The Best Coffee</h5>
+                        <p class="grey-text text-lighten-4">Conheça as especialidades da Macieul's Coffee!</p>
+                        <br>
+                  </div>
+
+                  <div class="col l4 offset-l2 s12">
+                    <h6 class="white-text">Meios de Comunicação</h6>
+                     <a href="https://www.facebook.com/" class="brand-logo"><img src="imagens/facebook.png" width="40"></a>
+                     <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="40"></a>
+                     <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="40"></a>
+                     <a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="40"></a>
+                     <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="40"></a>
+
+                     <br>
+
+                    <ul >
+                   
+                      
+                      <ul>
+                        <li><a href="cafes.html" class="waves-effect waves-light  white-text">Cafés</a></li>
+                        
+                        <li><a href="capsulas.html" class="waves-effect waves-light white-text">Cápsulas</a></li>
+                        
+                        <li><a href="sobremesas.html" class="waves-effect waves-light white-text">Sobremesas</a></li>
+                        
+                        <li><a href="sucos.html" class="waves-effect waves-light white-text">Sucos</a></li>
+                        
+    
+                      </ul>
+                  </div>
+
+            </div>
+            
+        </div>
+          
+        <div class="footer-copyright" style="background-color:#42210B;">
+           
+            <div class="container">
+                <span>
+                © 2020 Copyright Jhenifer Teixeira
+               </span>
+                              
+            </div>
+            
+        </div>
+          
+    </footer>
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/materialize.min.js"></script>
+        

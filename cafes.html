@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Macieul's Coffee</title>
+    <link rel="shortcut icon" href="imagens/icon.png" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+       <script>
+		   
+        $(function() {
+          $(window).on("scroll", function() {
+            if($(window).scrollTop() > 30) {
+              $(".sidebar-wrapper").addClass("novacor");
+            } else {
+              $(".sidebar-wrapper").removeClass("novacor");
+            }
+          });
+        });
+       
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+          });
+        
+            $(document).ready(function(){
+                $('.modal').modal();
+              });
+        
+          $('#textarea1').val('New Text');
+              M.textareaAutoResize($('#textarea1'));
+                    $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+          });
+       
+        
+    </script>
+    
+    <script type="text/javascript">
+		
+		    $(document).ready(function(){
+				$('.tooltipped').tooltip();
+                $('.parallax').parallax();
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('.dropdown-trigger').dropdown();
+                $('.fixed-action-btn').floatingActionButton();
+				 $('.slider').slider({full_width: true});
+            });
+            
+             $('.carousel').carousel({
+                fullWidth: true,
+                indicators: true
+              });
+
+        
+            $(document).ready(function(){
+
+                $('.slider').slider({ 
+                    full_width: true,
+                    height : 320, // default - height : 400
+                    interval: 7000 // default - interval: 6000
+                });
+
+            });
+            
+    </script>
+    
+    <script>    
+            
+
+        
+            
+    </script>
+    
+    
+  <div id="modal1" class="modal">
+    
+    <div class="modal-content">
+    
+        <a href="#!" class=" right modal-close waves-effect waves-green btn-flat">
+        <span class="material-icons">close</span></a>
+        <h4>Envie-nos uma mensagem</h4>
+        <p>Preencha os campos abaixo</p>
+       
+        <div class="row">
+        
+             <form class="col s12">
+
+                <br>    
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">account_circle</i>
+                        <input id="input_text" type="text" data-length="10">
+                        <label for="input_text">Nome</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">email</i>
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Digite um e-mail válido" data-success="E-mail válido"></span>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">comment</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensagem</label>
+                    </div>
+
+                  </div>
+
+              </form>
+        
+        </div>
+      
+            <button class="btn btn-small waves-effect waves-light btn-envio" type="submit" name="action">Enviar
+            </button>
+            <br>
+   
+    </div>
+   
+    
+</div>
+
+
+    <div class="row hide-on-small-only" style="background-color:#fff; margin:0px!important; font-size:11px;">
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	Atendimento delivery
+      </div>
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	<span class="material-icons icons">airport_shuttle</span>Entregas para Lins e região
+      </div>
+      
+      <div class="col s3 l4 hide-on-med-and-down" style="margin-top:0.4em!important;">
+      
+          <a href="https://www.facebook.com/" class="brand-logo" ><img src="imagens/facebook.png" width="22"></a>
+          <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="22"></a>
+          <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="22"></a><a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="22"></a>
+          <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="22"></a>
+                     
+      </div>
+      
+    </div>
+    
+    
+    <div class=" navbar-fixed">
+       
+        <nav class=" sidebar-wrapper z-depth-0 transparent">
+
+            <div class="nav-wrapper transparent z-depth-0">
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-menu" style="font-size:40px!important;">menu</i></a>
+  
+               
+               <ul class="right hide-on-med-and-down">
+                   
+                     <li><a href="#" class="disable" style="font-size:28px; margin-right:-15px;">|</a></li>
+                     <li><a href="login.html" class="waves-effect waves-light" ><span class="material-icons icon-login">person</span></a></li>                        
+                </ul>
+                  
+                <ul class="right hide-on-med-and-down">
+                   
+                     <!-- Dropdown Trigger -->
+                    <li><a href="index.html" class="waves-effect waves-light" ><span class="material-icons icons">home</span>Início</a></li>
+
+                     <li><a href="capsulas.html" class="waves-effect waves-light" ><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+                      <a class='dropdown-trigger btn btn-p waves-effect waves-light transparent' href='#' data-target='dropdown1'>CARDÁPIO</a>
+                        
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+    
+                      </ul>
+                     
+                </ul>
+                 
+          <ul class="left img-logo">
+            
+            <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="200" class="responsive-img"></a>
+            
+          </ul>
+        
+
+           <ul class="left  hide-on-med-and-down cf">
+            
+              <div class="row">
+                  <div class="col s12" >
+                      <div class="row" id="topbarsearch">
+                          <div class="input-field col s12 white-text">
+                              <i class="white-text material-icons prefix icon-search">search</i>
+                                  <input type="text" placeholder="Procurar" id="autocomplete-input" class="autocomplete white-text " >
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+            
+           </ul>
+        
+         </div>
+         
+      </nav>
+      
+		<ul class="sidenav" id="mobile-demo">
+               
+						<li><a href="index.html"class="waves-effect waves-light brown-text" ><span class="material-icons icons">home</span>Início</a></li>
+						<li class="divider" tabindex="-1"></li>
+						<li><a href="login.html" class="waves-effect waves-light brown-text" ><span class="material-icons icons">person</span>Login</a></li>
+						<li class="divider" tabindex="-1"></li>
+						 <li><a href="capsulas.html" class="brown-text "><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+						 <li class="divider" tabindex="-1"></li>
+						  
+						  <li class="btn-p2">CARDÁPIO</li>
+						  <li class="divider" tabindex="-1"></li>
+                       
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+		</ul>
+                
+        
+</div> 
+
+      
+</div>
+    
+      
+       
+     <div class="slider">
+           
+            <ul class="slides">
+             
+                <li>
+                    <img src="imagens/4.jpg" class="responsive-img">                  
+                </li>
+                
+                <li>  
+                    <img src="imagens/8.jpg"> 
+                </li>
+                
+                <li>
+                    <img src="imagens/c.jpg"> 
+                </li>
+             
+            </ul>
+            
+        </div>
+
+
+  <div class="cont">
+  
+  <br>
+  <hr>
+
+	  
+	  
+	   <div class="row">
+     
+     <br>
+                       
+            <div style="background-color:#F2E8C9; padding:3px; margin-top:5px;"><h5 class="titulo">CAFÉS</h5></div>
+             <br>    
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/cafes/expresso.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Expresso<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Expresso<i class="material-icons right">close</i></span>
+             <p class="descricao"> 
+O “expresso” é feito em poucos segundos sob alta pressão de água na temperatura de consumo. Isso faz com que acumule muito sabor e intensidade.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+      
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/expressoduplo.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Expresso Duplo<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$6,40</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Expresso Duplo<i class="material-icons right">close</i></span>
+             <p class="descricao">O café expresso duplo consiste em:• 2 shots de café expresso em uma xícara pequena;
+</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cappuccino.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Cappuccino<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$4,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Cappuccino<i class="material-icons right">close</i></span>
+             <p class="descricao">O cappuccino clássico italiano é uma combinação de café espresso e leite quente, coberto com espuma de leite.
+Coloca-se cerca de 1/3 de espresso na xícara, seguido de 1/3 de leite e finalizado com 1/3 de espuma de leite.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/lattemacchiato.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Latte Macchiato<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$6,20</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Latte Macchiato<i class="material-icons right">close</i></span>
+             <p class="descricao"><p class="descricao">Latte Macchiato é uma bebida levemente adocicada, muito cremosa e suave, feita com leite e um toque de café.</p>
+
+</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+    
+	  
+	  
+	  
+	  
+	  
+	   <div class="row">
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activatorresponsive-img" src="imagens/cafes/mocha.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Mocha<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Mocha<i class="material-icons right">close</i></span>
+             <p class="descricao"> 
+O café mocha é uma variação de bebida à base de café.É feito a base de um terço de café espresso, um terço de leite vaporizado e um terço de chocolate em pó ou calda, tanto do chocolate amargo quanto a versão ao leite.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/breve.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Breve<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$6,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Breve<i class="material-icons right">close</i></span>
+             <p class="descricao">O café breve se distingue por levar duas camadas de leite e espuma na mesma quantidade. Para prepará-lo, basta adicionar ao café expresso meia parte de leite e meia parte (igual) de espuma de leite.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafecremoso.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café Cremoso<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$4,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Café Cremoso<i class="material-icons right">close</i></span>
+             <p class="descricao">A mistura seca que dá origem à bebida pode ser conservada por uma semana ou mais. Para consumir, basta acrescentar água quente na proporção de preferência. Quanto mais mexer, mais cremosa a bebida será.
+Ingredientes
+100 g de café solúvel; 1 lata de leite Ninho; 2 xícaras (chá) de açúcar refinado; 1 colher (sopa) de bicarbonato de sódio; 1 colher (sobremesa) de canela em pó; 2 colheres (sopa) de chocolate em pó.
+
+Modo de fazer
+Disponha todos os ingredientes em um bowl e misture bem. Aos poucos, despeje a mistura no liquidificador, batendo sem parar até resultar em um pó homogêneo e bem fininho.
+</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafeamericano.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café Americano<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$6,20</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Café Americano<i class="material-icons right">close</i></span>
+             <p class="descricao">O café americano é um tipo de café mais fraco que leva uma quantidade de água misturada ao café. É basicamente um expresso, só que com mais água.
+
+Use a mesma quantidade de pó de café moído dos grãos utilizada para fazer o expresso, de 7 a 9 g. Com 20 g de pó, é possível fazer um americano duplo. Ferva água em um bule e despeje a quantidade que você deseja em uma xícara.
+
+Em seguida, despeje o café expresso na xícara. Depois, é só servir. Cuidado: despejar o café expresso na xícara antes da água fervente pode alterar a cremosidade da bebida.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+    
+    
+    
+    
+    
+	       <div class="row">
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafe-ristretto.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Ristretto<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$6,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Ristretto<i class="material-icons right">close</i></span>
+             <p class="descricao">O ristretto é uma versão mais concentrada do café espresso padrão. Basicamente, trata-se da extração da mesma quantidade de café de um espresso, mas em apenas metade da quantidade de água.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafe-affogato.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Affogato<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Affogato<i class="material-icons right">close</i></span>
+             <p class="descricao">O affogato é mais uma sobremesa do que um drink, o que o torna especialmente delicioso, Consiste na mistura de uma boa colherada de sorvete de baunilha com uma ou duas doses de café espresso.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafe-gelado.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café gelado<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$7,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Café gelado<i class="material-icons right">close</i></span>
+             <p class="descricao">O café gelado é caracterizado, pelo resfriamento da bebida quente. Esse resfriamento pode ocorrer de formas variadas, cada uma delas dando diferentes sabores e sensações à bebida. 
+        </p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafe-gourmet.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café gourmet<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$7,20</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Café gourmet<i class="material-icons right">close</i></span>
+             <p class="descricao">Café de alta qualidade, possui sabor mais acentuado, intenso envolvente aroma e gosto equilibrado e fino. São levemente adocicados e deixam um gosto muito agradável na boca. Os Cafés Gourmet são feitos com grãos 100% arábica.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+    
+    
+    
+    
+    
+    
+    <div class="row">
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/Macchiato.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Macchiato<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Macchiato<i class="material-icons right">close</i></span>
+             <p class="descricao">O Macchiato é um café expresso servido com o creme do leite por cima. Diferente do Cappucino, por exemplo, ele é servido sem a camada de leite vaporizado.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/cafe-com-chantilly.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café com Chantilly<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$6,90</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Café com Chantilly<i class="material-icons right">close</i></span>
+             <p class="descricao">Aqui sim temos uma autêntica variação de Café com Chantilly, que é uma bebida bastante apreciada no Brasil. A sua composição leva café expresso com uma camada de chantilly por cima.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/pingado.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Café Pingado<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Café Pingado<i class="material-icons right">close</i></span>
+             <p class="descricao">Famoso nas padarias brasileiras, o Pingado é servido em um copo americano composto por uma grande quantidade de leite e um só um pouquinho de café por cima.
+        </p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator responsive-img" src="imagens/cafes/frappuccino.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Frappuccino<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,50</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Frappuccino<i class="material-icons right">close</i></span>
+             <p class="descricao">Frappuccino é uma marca registrada de bebidas café congeladas vendidas pela cadeia de café Starbucks. É composto de café ou outro ingrediente básico, misturado com gelo e vários outros ingredientes, coberto com chantilly.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+
+    <br>   
+    <hr>
+    <br>  
+                    
+</div>         
+             
+ 
+                       
+        <div class="fixed-action-btn" >
+              <a class="btn-floating btn-large pulse tooltipped modal-trigger" data-position="left" data-tooltip="Envie uma mensagem" style="background-color:rgba(204, 174, 98,1.0);" href="#modal1">
+                <i class="large material-icons">comment</i>
+              </a>
+              
+              <ul>
+                <li>
+                	<a class="btn-floating btn-large tooltipped" data-position="left" data-tooltip="Faça seu pedido online" style="background-color:rgba(204, 174, 98,1.0);" href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1" target="_blank"><i class="material-icons">call</i></a>
+                </li>
+              </ul>
+        </div>
+        
+
+</div>
+        
+       
+               
+    <footer class="page-footer" style="background-color:#0D0D0D;">
+         
+        <div class="container">
+           
+            <div class="row">
+
+                  <div class="col l6 s12" style="margin-top:5%;">
+                        <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="150" ></a>
+                        <h5 class="white-text">The Best Coffee</h5>
+                        <p class="grey-text text-lighten-4">Conheça as especialidades da Macieul's Coffee!</p>
+                        <br>
+                  </div>
+
+                  <div class="col l4 offset-l2 s12">
+                    <h6 class="white-text">Meios de Comunicação</h6>
+                     <a href="https://www.facebook.com/" class="brand-logo"><img src="imagens/facebook.png" width="40"></a>
+                     <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="40"></a>
+                     <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="40"></a>
+                     <a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="40"></a>
+                     <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="40"></a>
+
+                     <br>
+
+                    <ul >
+                   
+                      
+                      <ul>
+                        <li><a href="cafes.html" class="waves-effect waves-light  white-text">Cafés</a></li>
+                        
+                        <li><a href="capsulas.html" class="waves-effect waves-light white-text">Cápsulas</a></li>
+                        
+                        <li><a href="sobremesas.html" class="waves-effect waves-light white-text">Sobremesas</a></li>
+                        
+                        <li><a href="sucos.html" class="waves-effect waves-light white-text">Sucos</a></li>
+                        
+    
+                      </ul>
+                  </div>
+
+            </div>
+            
+        </div>
+          
+        <div class="footer-copyright" style="background-color:#42210B;">
+           
+            <div class="container">
+                <span>
+                © 2020 Copyright Jhenifer Teixeira
+               </span>
+                              
+            </div>
+            
+        </div>
+          
+    </footer>
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/materialize.min.js"></script>
+        
+        

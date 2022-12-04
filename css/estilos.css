@@ -1,0 +1,399 @@
+body{
+  background-color: #fff;
+  color:#7C7C7C;
+  text-align: center;
+}
+
+hr{
+    height: 3px;
+    background-color: saddlebrown;
+    
+}
+
+.valor{
+	color: green!important;
+    
+}
+
+.card-content{
+    height: 80px;
+}
+
+.txt-cafe{
+	position: relative;
+	top: -8px;
+	font-weight: 600!important;
+	font-size: 1.2em!important;
+}
+
+.tit-prod{
+	
+	font-weight: 600!important;
+	font-size: 1.1em!important;
+	
+}
+
+.descricao{
+	text-align: justify;
+	font-size: 0.9em!important;
+}
+
+
+.info{
+    height: 12px!important;
+    font-size: 12px;
+}
+
+.slider {
+    margin-top: -4em!important;
+    height: 600px;
+}
+
+.cont{
+    padding-left: 7%;    
+    padding-right: 7%;    
+}
+
+.m{
+    margin-top: 6%!important;
+}
+
+.tit{
+    padding: 10px;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: rgba(204, 174, 98,1.0);
+    
+}
+
+.titulo{
+	font-size: 1.4em;
+    font-family: Times New Roman;
+    color: #0B3B39;
+    font-weight: 500;
+	
+}
+
+.titulo-extra{
+	font-size: 1.0em;
+    color: #0B3B39;
+    font-weight: 600;
+	margin-left: 10px;
+	
+}
+
+.titulo-cafes{
+	font-size: 1.0em;
+    font-family: Times New Roman;
+    color: #0B3B39;
+    font-weight: 500;
+	
+}
+
+.subtit{
+    text-align: justify!important;
+	font-size: 1.0em;
+}
+
+.novacor{
+    margin-top: 0% !important;
+    background: #42210B !important;
+    height: 70px!important;
+    line-height: 70px !important;
+    position: relative;
+    top: 0px;
+    color: blac k!important;
+}
+
+.sidebar-wrapper{
+    background: rgba(170, 166, 157,.0);
+}
+
+
+nav {
+    margin-top: 1% !important;
+    height: 80px!important;
+    line-height: 80px!important;
+    text-transform: uppercase;
+    padding-right: 4%;
+    
+ }
+
+.img-logo img{
+    position: relative;
+    top: 5px;
+    margin-left: 60px;
+}
+
+.img-logo:hover{
+    background-color:rgba(170, 166, 157,.0);
+}
+
+.efeito-img{
+    position:relative;
+    top:0;
+    transition: all .2s ease-in-out;
+}
+
+.efeito-img:hover{
+    top:-10px;
+    box-shadow:0 4px 3px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+#mostrar{
+  display: none;
+}
+
+#passar_mouse:hover #mostrar{
+  display:block;
+}
+
+.cf{
+    margin-left: 340px;
+}
+
+.btn-envio{
+    background-color:#804924;
+}
+
+.btn-envio:hover{
+    background-color:#331402;
+    border-radius: 20px;
+}
+
+
+.btn-p{
+    border: #fff solid 2px;
+    background-color:rgba(170, 166, 157,.0);
+    margin-left: 10px;
+}
+
+.btn-p:hover{
+    border-radius: 30px;
+    border: #fff solid 2px;    
+}
+
+.btn-p2{
+    background-color:#804924;
+	color: white;
+}
+
+.btn-p2:hover{
+    border: #000 solid 2px;    
+}
+
+
+.btn-compra{
+	cursor: context-menu;
+}
+
+.btn-compra:hover{
+    border-radius: 10px;
+}
+
+.btn-compra:active {
+	position:relative;
+	top:2px;
+}
+
+.btn-mais{
+    background-color:#804924;
+}
+
+.btn-mais:hover{
+    background-color:#331402;
+    border-radius: 2px;
+}
+
+ p {
+    margin: 0.5em auto 0.5 auto;
+  }
+
+nav ul li a{
+    font-size: 12px;
+}
+
+.icon-modal{       
+   color: #0f3b2e;
+   
+}
+
+.icons{       
+    vertical-align: text-top;
+    font-size: 16px !important;
+    margin-right: 10px;  
+}
+
+
+.icon-login{    
+    margin-top: -5px; 
+    vertical-align: text-top;
+    font-size: 26px !important;
+    margin-right: 10px;  
+}
+
+.txt{
+    text-align: left;
+     margin-left:20px;
+}
+
+.icon-search{       
+    vertical-align: text-top;
+    font-size: 18px !important;
+ }
+
+#pag1 p{
+    font-size: 35px;
+    color: #A35D2C;
+    text-align: center;
+}
+
+.card-reveal{
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.7) !important;
+}
+
+div.card-reveal span.card-title{
+  color: #ffffff !important;
+}
+
+
+
+input[type=search]:focus{
+  border-bottom: 1px solid #ee6e73 !important;
+  box-shadow: 0 1px 0 0 #ee6e73 !important;
+}
+
+#pag2 img{
+    margin-top: 40px;
+}
+
+#pag3 img{
+    margin-top: 40px;
+}
+
+#pag4 img{
+    margin-top: 40px;
+}
+
+.img-container{
+   overflow: hidden;
+}
+
+.img-container img{
+   width: 100%;
+   height: 100%;
+   -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+
+.img-container:hover img{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 200px; /* Changed this to accomodate content width */
+
+}
+
+.efeito-mapa{
+    -webkit-filter:grayscale(0%);
+}
+
+.efeito-mapa:hover{
+    -webkit-filter:grayscale(100%);
+    transition: 1s;
+}
+.carousel{
+    margin-top: 2%;
+    height: 250px;
+}
+
+.navbar-fixed {
+  z-index: 998;
+}
+
+
+.carousel-image {
+  display: block;
+  max-width: 280px;
+  height: auto;
+  margin-right: 10px;
+  /* vertically center */
+  transform: translateY(-50%)
+}
+
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #804924;
+  background-color: #804924;
+  z-index: 0;
+}
+
+.section-slide .slider .slides{
+    background-color: transparent;
+    margin: 0;
+    height: 700px;
+}
+.section-slide .slider .slides li img{
+    height: 100% !important;
+    width: 100% !important;
+    background-position: top;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #8C4227!important;
+}
+
+.slider .indicators .indicator-item{
+    background-color: #fff!important;
+    border: solid 2px #8C4227!important;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: rgba(204, 174, 98,1.0)!important;
+    color: #FFF!important;
+}
+
+.tabs .indicator{
+    background-color: rgba(204, 174, 98,1.0)!important;
+}
+.modal { max-height: 100%; overflow: visible} 
+
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid rgba(204, 174, 98,1.0) !important;
+   box-shadow: 0 1px 0 0 rgba(204, 174, 98,1.0) !important
+ }
+
+  textarea:focus {
+   border-bottom: 1px solid rgba(204, 174, 98,1.0) !important;
+   box-shadow: 0 1px 0 0 rgba(204, 174, 98,1.0) !important
+ }
+
+/* label color */
+   .input-field label {
+     color: #0f3b2e!important;
+   }
+
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: rgba(204, 174, 98,1.0);
+   }
+
+ul.dropdown-content.select-dropdown li span {
+    color: #000; 
+}
+
+

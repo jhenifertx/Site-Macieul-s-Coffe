@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Macieul's Coffee</title>
+    <link rel="shortcut icon" href="imagens/icon.png" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+         <script>
+		   
+        $(function() {
+          $(window).on("scroll", function() {
+            if($(window).scrollTop() > 30) {
+              $(".sidebar-wrapper").addClass("novacor");
+            } else {
+              $(".sidebar-wrapper").removeClass("novacor");
+            }
+          });
+        });
+       
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+          });
+        
+            $(document).ready(function(){
+                $('.modal').modal();
+              });
+        
+          $('#textarea1').val('New Text');
+              M.textareaAutoResize($('#textarea1'));
+                    $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+          });
+       
+        
+    </script>
+    
+    <script type="text/javascript">
+		
+		    $(document).ready(function(){
+				$('.tooltipped').tooltip();
+                $('.parallax').parallax();
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('.dropdown-trigger').dropdown();
+                $('.fixed-action-btn').floatingActionButton();
+				 $('.slider').slider({full_width: true});
+            });
+            
+             $('.carousel').carousel({
+                fullWidth: true,
+                indicators: true
+              });
+
+        
+            $(document).ready(function(){
+
+                $('.slider').slider({ 
+                    full_width: true,
+                    height : 320, // default - height : 400
+                    interval: 7000 // default - interval: 6000
+                });
+
+            });
+            
+    </script>
+    
+    <script>    
+            
+
+        
+            
+    </script>
+    
+    
+  <div id="modal1" class="modal">
+    
+    <div class="modal-content">
+    
+        <a href="#!" class=" right modal-close waves-effect waves-green btn-flat">
+        <span class="material-icons">close</span></a>
+        <h4>Envie-nos uma mensagem</h4>
+        <p>Preencha os campos abaixo</p>
+       
+        <div class="row">
+        
+             <form class="col s12">
+
+                <br>    
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">account_circle</i>
+                        <input id="input_text" type="text" data-length="10">
+                        <label for="input_text">Nome</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">email</i>
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Digite um e-mail válido" data-success="E-mail válido"></span>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">comment</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensagem</label>
+                    </div>
+
+                  </div>
+
+              </form>
+        
+        </div>
+      
+            <button class="btn btn-small waves-effect waves-light btn-envio" type="submit" name="action">Enviar
+            </button>
+            <br>
+   
+    </div>
+   
+    
+</div>
+
+
+    <div class="row hide-on-small-only" style="background-color:#fff; margin:0px!important; font-size:11px;">
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	Atendimento delivery
+      </div>
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	<span class="material-icons icons">airport_shuttle</span>Entregas para Lins e região
+      </div>
+      
+      <div class="col s3 l4 hide-on-med-and-down" style="margin-top:0.4em!important;">
+      
+          <a href="https://www.facebook.com/" class="brand-logo" ><img src="imagens/facebook.png" width="22"></a>
+          <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="22"></a>
+          <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="22"></a><a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="22"></a>
+          <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="22"></a>
+                     
+      </div>
+      
+    </div>
+    
+    
+    <div class=" navbar-fixed">
+       
+        <nav class=" sidebar-wrapper z-depth-0 transparent">
+
+            <div class="nav-wrapper transparent z-depth-0">
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-menu" style="font-size:40px!important;">menu</i></a>
+  
+               
+               <ul class="right hide-on-med-and-down">
+                   
+                     <li><a href="#" class="disable" style="font-size:28px; margin-right:-15px;">|</a></li>
+                     <li><a href="login.html" class="waves-effect waves-light" ><span class="material-icons icon-login">person</span></a></li>                        
+                </ul>
+                  
+                <ul class="right hide-on-med-and-down">
+                   
+                     <!-- Dropdown Trigger -->
+                    <li><a href="index.html" class="waves-effect waves-light" ><span class="material-icons icons">home</span>Início</a></li>
+
+                     <li><a href="capsulas.html" class="waves-effect waves-light" ><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+                      <a class='dropdown-trigger btn btn-p waves-effect waves-light transparent' href='#' data-target='dropdown1'>CARDÁPIO</a>
+                        
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+    
+                      </ul>
+                     
+                </ul>
+                 
+          <ul class="left img-logo">
+            
+            <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="200" class="responsive-img"></a>
+            
+          </ul>
+        
+
+           <ul class="left  hide-on-med-and-down cf">
+            
+              <div class="row">
+                  <div class="col s12" >
+                      <div class="row" id="topbarsearch">
+                          <div class="input-field col s12 white-text">
+                              <i class="white-text material-icons prefix icon-search">search</i>
+                                  <input type="text" placeholder="Procurar" id="autocomplete-input" class="autocomplete white-text " >
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+            
+           </ul>
+        
+         </div>
+         
+      </nav>
+      
+		<ul class="sidenav" id="mobile-demo">
+               
+						<li><a href="index.html"class="waves-effect waves-light brown-text" ><span class="material-icons icons">home</span>Início</a></li>
+						<li class="divider" tabindex="-1"></li>
+						<li><a href="login.html" class="waves-effect waves-light brown-text" ><span class="material-icons icons">person</span>Login</a></li>
+						<li class="divider" tabindex="-1"></li>
+						 <li><a href="capsulas.html" class="brown-text "><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+						 <li class="divider" tabindex="-1"></li>
+						  
+						  <li class="btn-p2">CARDÁPIO</li>
+						  <li class="divider" tabindex="-1"></li>
+                       
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+		</ul>
+                
+        
+</div> 
+
+       
+        <div class="slider">
+           
+            <ul class="slides">
+             
+                <li>
+                    <img src="imagens/4.jpg" class="responsive-img">                  
+                </li>
+                
+                <li>  
+                    <img src="imagens/8.jpg"> 
+                </li>
+                
+                <li>
+                    <img src="imagens/c.jpg"> 
+                </li>
+             
+            </ul>
+            
+        </div>
+
+
+  <div class="cont">
+    
+  <br>
+  <hr>
+      
+        <div class="row">
+        
+        <br>
+                       
+            <div style="background-color:#F2E8C9; padding:3px; margin-top:5px;"><h5 class="titulo">SOBREMESAS</h5></div>
+            <br>      
+            <h5 class="titulo center">BOLOS</h5>
+            <br>            
+            
+  
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-morango.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de morango<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 20,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de morango<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			PÃO DE LÓ:<br>
+			5 ovos<br>
+			2 xícaras (chá) de açúcar<br>
+			2 xícaras (chá) de farinha de trigo<br>
+			1 xícara (cha) de leite quente<br>
+			1 colher (sopa) de fermento em pó<br><br>
+			RECHEIO:<br>
+			1/2 litro de leite<br>
+			1 lata de leite condensado<br>
+			1 lata de creme de leite<br>
+			3 gemas<br>
+			3 colheres de amido de milho<br>
+			2 caixinhas de morango<br><br>
+			COBERTURA:<br>
+			2 caixinhas de chantilly Amélia<br>
+			1 caixinha de morango</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-cafe.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de café<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$15,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de café<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			MASSA:<br>
+			3 colheres de sopa de margarina<br>
+			3 gemas<br>
+			3 claras em neve<br>
+			9 colheres de sopa de açúcar<br>
+			1 colher de sopa de chocolate em pó<br>
+			1 colher de sopa de fermento em pó<br>
+			4 colheres de sopa de amido de milho<br>
+			1/2 xícara de chá de café frio e forte<br>
+			5 colheres de sopa de farinha de trigo<br>
+			COBERTURA:<br><br>
+			1 ovo<br>
+			3 colheres de sopa de margarina<br>
+			2 colheres de sopa de chocolate em pó<br>
+			1 colher tipo sobremesa de baunilha<br>
+			3 colheres de sopa de açúcar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-coco.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de Coco<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 17,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de Coco<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			Massa<br>
+			2 xícaras (chá) de açúcar<br>
+			2 xícaras (chá) de farinha de trigo<br>
+			4 ovos<br>
+			1 xícara (chá) leite<br>
+			2 colheres (sopa) coco ralado<br>
+			1 colher (sopa) fermento em pó<br>
+			2 colheres (sopa) margarina sem sal<br><br>
+			Calda<br>
+			1 lata de leite condensado<br>
+			1 vidro (200 ml) leite de coco<br>
+			1 xícara de coco ralado</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-brigadeiro.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de Brigadeiro<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 25,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de Brigadeiro<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			MASSA:<br>
+			3 ovos<br>
+			1 xícara de óleo<br>
+			1 xícara de leite<br>
+			2 xícaras de trigo<br>
+			1 xícara de açúcar<br>
+			1 xícara de nescau<br>
+			1 colher de sopa de fermento<br><br>
+			RECHEIO E COBERTURA:<br>
+			3 colheres de manteiga sem sal<br>
+			1 lata de leite condensado<br>
+			5 colheres de nescau<br>
+			1 lata de creme de leite<br><br>
+			CALDA:<br>
+			1 copo de leite<br>
+			2 colheres de chocolate<br>
+			Essência de rum (opcional)<br><br>
+			DECORAÇÃO:<br>
+			Granulado ou raspas de chocolate</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	       <div class="row">
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-cenoura.jpg" />
+
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de Cenoura<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 15,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de Cenoura<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+				MASSA<br>
+				1/2 xícara (chá) de óleo<br>
+				3 cenouras médias raladas<br>
+				4 ovos<br>
+				2 xícaras (chá) de açúcar<br>
+				2 e 1/2 xícaras (chá) de farinha de trigo<br>
+				1 colher (sopa) de fermento em pó<br><br>
+				COBERTURA<br>
+				1 colher (sopa) de manteiga<br>
+				3 colheres (sopa) de chocolate em pó<br>
+				1 xícara (chá) de açúcar<br>
+				1 xícara (chá) de leite</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-fuba.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de Fubá<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$10,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de Fubá<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			4 ovos<br>
+			2 xícaras (chá) de açúcar<br>
+			2 xícaras (chá) de trigo<br>
+			1 xícara (chá) de fubá<br>
+			3 colheres (sopa) de margarina<br>
+			1 xícara (chá) de leite<br>
+			4 colheres (chá) de fermento</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo_prestigio.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de Prestigio<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 26,90</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de Prestigio<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			MASSA:<br>
+			3 ovos<br>
+			1 xícara e 1/2 de açúcar<br>
+			1 xícara de leite quente<br>
+			2 xícaras de trigo<br>
+			1 xícara e 1/2 de nescau<br>
+			1/2 xícara de óleo<br>
+			1 colher de pó royal<br><br>
+			RECHEIO:<br>
+			1/2 litro de leite<br>
+			1 lata de leite moça<br>
+			4 colher de sopa de açúcar<br>
+			3 colheres de maizena dissolvida em 1/2 xícara de água<br>
+			250 g de coco ralado<br><br>
+			COBERTURA:<br>
+			3 colheres de nescau<br>
+			2 colher de margarina<br>
+			1 lata de leite moça
+			</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolo-de-chocolate.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolo de Chocolate<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 21,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolo de Chocolate<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			Massa:<br>
+			4 ovos<br>
+			4 colheres (sopa) de chocolate em pó<br>
+			2 colheres (sopa) de manteiga<br>
+			3 xícaras (chá) de farinha de trigo<br>
+			2 xícaras (chá) de açúcar<br>
+			2 colheres (sopa) de fermento<br>
+			1 xícara (chá) de leite<br><br>
+			Calda:<br>
+			2 colheres (sopa) de manteiga<br>
+			7 colheres (sopa) de chocolate em pó<br>
+			2 latas de creme de leite com soro<br>
+			3 colheres (sopa) de açúcar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+      
+	  
+
+                 
+                  
+
+	   <div class="row">
+        
+        <br>
+                                        
+            <h5 class="titulo center">TORTAS</h5>
+            <br>            
+
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/TORTA-ALEMÃ.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta Alemã<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$32,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta Alemã<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br>
+200 g de manteiga sem sal <br>
+1 xícara (chá) de açúcar<br>
+1 lata de creme de leite sem soro<br>
+1 pacote de bolacha maisena<br>
+leite, o quanto baste, para molhar a bolacha<br>
+1 lata de leite condensado, sabor chocolate (ou cobertura de sorvete)</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-limao.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Limão<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$26,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Limão<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			Massa:<br>
+			200 g de biscoito de maisena<br>
+			150 g de margarina<br><br>
+			Recheio:<br>
+			1 lata de leite condensado (395 g)<br>
+			1 caixa de creme de leite (200 g)<br>
+			suco de 4 limões<br>
+			raspas de 2 limões<br><br>
+			Cobertura:<br>
+			3 ou 4 claras de ovo<br>
+			3 colheres (sopa) de açúcar<br>
+			raspas de 2 limões para decorar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-cafe-chocolate.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Café<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$26,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Café<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			MASSA:<br>
+			5 ovos<br>
+			2 xícaras (chá) de açúcar<br>
+			100 g de nozes sem casca, moídas<br>
+			meio tablete de chocolate meio amargo, ralado (100 g)<br>
+			1 xícara (chá) de leite fervente<br>
+			2 xícaras (chá) de farinha de trigo<br>
+			1 colher (sopa) rasa de fermento em pó<br>
+			meio copo de conhaque para regar a massa<br><br>
+			GLACÊ:<br>
+			300 g de manteiga<br>
+			1 lata de leite condensado<br>
+			3 colheres (sopa) de café solúvel
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-mousse-de-chocolate.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Chocolate<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$30,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Chocolate<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+			MASSA:<br>
+			1 pacote de biscoito tipo maisena<br>
+			1/2 xícara de chá de manteiga derretida<br><br>
+			RECHEIO:<br>
+			500 ml de creme de leite fresco<br>
+			500 g de chocolate meio amargo picado, se preferir use chocolate branco<br>
+			1 envelope de gelatina incolor sem sabor<br>
+			2 claras<br>
+			4 colheres de sopa de açúcar<br>
+			morangos para enfeitar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+	  
+	  
+	       <div class="row">
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-mousse-de-maracuja.jpg" />
+
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Maracuja<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$28,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Maracuja<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+MASSA:<br>
+125 g de margarina<br>
+1 1/2 xícaras de açúcar<br>
+2 ovos<br>
+2 xícaras de farinha de trigo<br>
+1 xícara de suco concentrado de maracujá<br>
+1 colher (sopa) de fermento<br><br>
+RECHEIO:<br>
+1 lata de leite condensado<br>
+1 copo (americano) de suco de maracujá concentrado<br><br>
+COBERTURA:<br>
+Algumas gotas de baunilha<br>
+1 clara<br>
+1 xícara de açúcar<br>
+1 xícara de água<br>
+1 maracujá<br>
+1 colher<br>
+1 colher (sopa) de amido de milho</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-de-ninho.JPG">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Ninho<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$29,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Ninho<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br>
+200 g de biscoito de maisena<br>
+4 colheres (sopa) de manteiga derretida<br>
+1 lata de leite condensado<br>
+2 caixas de creme de leite<br>
+1 xícara de leite ninho<br>
+24 g de gelatina incolor sem sabor<br>
+200 g de creme de avelã<br>
+leite em pó a gosto para finalizar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-abacaxi.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Abacaxi<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$33,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Abacaxi<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+CREME:<br>
+1 lata de leite condensado<br>
+1 lata de leite de vaca ou integral (use a lata do leite condensado como medida)<br>
+1 colher (sopa) bem cheia de maisena<br>
+1 gema (coada na peneira)<br>
+1 lata de creme de leite<br><br>
+DOCE DE ABACAXI:<br>
+1 abacaxi cortado picadinho (deixar uns pedaços maiores para decorar)<br>
+1/2 xícara de água<br>
+1 xícara de açúcar<br><br>
+INGREDIENTES PARA DECORAR A TORTA:<br>
+coco ralado em flocos ou normal e abacaxi para decorar
+</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/torta-morango.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Torta de Morango<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$36,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Torta de Morango<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br><br>
+MASSA:<br>
+2 colheres (sopa) de margarina<br>
+2 colheres (sopa) de óleo<br>
+1 ovo inteiro<br>
+2 colheres rasas (sopa) de açúcar<br>
+1 pitada de sal<br>
+1 colher rasa (sopa) de fermento em pó<br>
+farinha de trigo até a massa desgrudar da mão<br><br>
+CREME:<br>
+1 lata de leite condensado<br>
+1 lata de creme de leite<br>
+3 gemas<br>
+3 copos de leite<br>
+1 colher (sopa) de maisena<br>
+2 caixinhas de morangos<br>
+1 gelatina de morango</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+      
+       
+        
+         
+          
+           
+            
+      	   <div class="row">
+        
+        <br>
+                                        
+            <h5 class="titulo center">SOBREMESAS GELADAS</h5>
+            <br>            
+    
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/escondidinho-morango.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Escondidinho de morango<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$25,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Escondidinho de morango<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES<br> 2 latas de leite condensado,2 colheres (sopa) de manteiga, 360 g de chocolate amargo ou meio amargo picado, 2 latas de creme de leite, 3 caixas de morango picado (reserve alguns inteiros para decorar). Rendimento: 8 porções</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/Taca-bombom-de-uva.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Taça bombom de uva<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$16,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Taça bombom de uva<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES
+             <br>
+1 kg de uva thompson (aquelas verdes que não tem caroço), lavadas e sem cabinhos<br>
+1 Lata de Leite Condensado<br>
+3 gemas peneiradas<br>
+2 colheres de sopa de manteiga<br>
+1 caixinha de creme de leite (200 gramas)<br>
+170 gramas de chocolate meio amargo picado</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/taca-de-gala-abacaxi.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Taça de gala de abacaxi<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$16,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Taça de gala de abacaxi<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES<br><br>
+1ª Camada:<br>
+1 xícara (chá) de açúcar, 1 abacaxi médio picado;<br><br>
+2ª Camada:<br>
+1 embalagem de pudim sabor baunilha, 500 ml de leite, 1 lata de leite condensado, 2 gemas, ½ xícara (chá);<br><br>
+3ª Camada:<br>
+ 1 embalagem de gelatina sabor abacaxi, 1 xícara (chá) de água fervente, 1 xícara (chá) de água fria;<br>
+<br>
+Para decorar: Chantilly, 3 colheres (sopa) de nozes picadas;
+           
+         </div>
+         
+       </div>
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/taca-de-prestigio.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Taça de prestigio<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$14,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Taça de prestigio<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br>
+1 lata de Moça Fiesta sabor beijinho<br>
+1 vidro de leite de coco<br>
+1 pacote de gelatina sem sabor<br>
+2 caixinhas de creme de leite<br>
+1 barra de chocolate meio amargo<br>
+coco ralado para enfeitar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+	  
+	  
+	       <div class="row">
+      
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/pave-chocolate.jpg" />
+
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Pave de chocolate<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$ 26,60</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Pave de chocolate<i class="material-icons right">close</i></span>
+             <p class="descricao">
+             INGREDIENTES <br>
+             Meia xícara de amido de milho<br>
+			2 medidas da lata de leite condensado de leite<br>
+			1 lata de leite condensado<br>
+			1 colher de chá de baunilha<br>
+			250 gramas de chocolate picado ou achocolatado em pó<br>
+			1 lata de creme de leite<br>
+			1 xícara de leite<br>
+			2 pacotes de biscoitos<br>
+			200 gramas de chocolate ralado ou granulado</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/pave-de-doce-de-leite-com-amendoim.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Pave de doce de leite com amendoim<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$30,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Pave de doce de leite com amendoim<i class="material-icons right">close</i></span>
+             <p class="descricao">2 latas de leite condensado
+2 latas de creme de leite (com soro)
+200 g de biscoito maria
+500 g de amendoim, sem pele, torrado e moído</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/pave_de_abacaxi.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Pave de Abacaxi<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$22,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Pave de Abacaxi<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br>
+1 abacaxi grande em pedaços<br>
+1 xícara de açúcar<br>
+1 lata de leite condensado<br>
+A mesma medida de leite<br>
+1 lata de creme de leite sem o soro<br>
+2 ovos<br>
+2 colheres de amido de milho<br>
+Coco ralado em flocos</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/pave_de_morango.jpg" >
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Pave de Morango<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$26,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4" onclick="alert('Olá')">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Pave de Morango<i class="material-icons right">close</i></span>
+             <p class="descricao">INGREDIENTES <br>
+1 pacote de bolacha maizena ou bolacha champagne<br>
+1 lata de leite condensado<br>
+1 caixinha de creme de leite<br>
+1 lata de leite comum<br>
+2 gemas peneiradas<br>
+1 colher (sopa) de farinha de trigo ou maisena<br>
+2 xícaras (chá) de morango<br>
+1 colher (chá) de baunilha<br>
+morango e chantilly para decorar</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+      
+        
+        
+        
+        
+      <div class="row">
+        
+        <br>
+                                        
+            <h5 class="titulo center">DOCES</h5>
+            <br>            
+
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/bolinhoChuva.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Bolinho de Chuva<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Bolinho de Chuva<i class="material-icons right">close</i></span>
+             <p class="descricao">O bolinho de chuva é feito de farinha de trigo, ovos, leite e fermento químico. Os bolinhos são fritos em óleo quente e polvilhados com canela e açúcar.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/churros.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Churros<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$5,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Churros<i class="material-icons right">close</i></span>
+             <p class="descricao">Este doce é preparado com massa à base de farinha de trigo e água, em formato cilíndrico e frito em óleo vegetal.[1] Logo após, ele pode ser salpicado com uma camada de açúcar por fora (opcionalmente, também com canela). </p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/brigadeiro-ninho-nutella.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Brigadeiro de ninho nutella<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor promo">R$4,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Brigadeiro de ninho nutella<i class="material-icons right">close</i></span>
+             <p class="descricao">Esse docinho é um diferencial para quem faz apenas os tradicionais. Usa-se 1 lata de leite condensado,
+3 colheres de sopa de leite Ninho, 1 colher de sopa de manteiga ou margarina e Nutella para o recheio.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+       <div class="col s6 l3 m3">
+         <div class="card">
+          
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator resizeimg responsive-img" src="imagens/carolinas.jpg">
+           </div>
+           
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4 txt-cafe">Carolinas<i class="material-icons right">more_vert</i></span>
+           </div>
+           
+           <div class="card-action">
+             <a href="#" class="valor">R$10,00</a>
+             <a class="waves-effect waves-light btn btn-small btn-compra teal darken-4">Comprar</a>           
+           </div>
+           
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4 tit-prod">Carolinas<i class="material-icons right">close</i></span>
+             <p class="descricao">Carolina é um doce derivado do éclair, tradicional doce francês. É uma minibomba recheada com creme de chocolate, doce de leite ou creme de confeiteiro.</p>
+           </div>
+           
+         </div>
+         
+       </div>
+       
+	  </div>
+	  
+
+    
+    <br>   
+    <hr>
+    <br>  
+                    
+</div>         
+             
+ 
+                       
+        <div class="fixed-action-btn" >
+              <a class="btn-floating btn-large pulse tooltipped modal-trigger" data-position="left" data-tooltip="Envie uma mensagem" style="background-color:rgba(204, 174, 98,1.0);" href="#modal1">
+                <i class="large material-icons">comment</i>
+              </a>
+              
+              <ul>
+                <li>
+                	<a class="btn-floating btn-large tooltipped" data-position="left" data-tooltip="Faça seu pedido online" style="background-color:rgba(204, 174, 98,1.0);" href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1" target="_blank"><i class="material-icons">call</i></a>
+                </li>
+              </ul>
+        </div>
+        
+
+</div>
+        
+       
+            
+    <footer class="page-footer" style="background-color:#0D0D0D;">
+         
+        <div class="container">
+           
+            <div class="row">
+
+                  <div class="col l6 s12" style="margin-top:5%;">
+                        <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="150" ></a>
+                        <h5 class="white-text">The Best Coffee</h5>
+                        <p class="grey-text text-lighten-4">Conheça as especialidades da Macieul's Coffee!</p>
+                        <br>
+                  </div>
+
+                  <div class="col l4 offset-l2 s12">
+                    <h6 class="white-text">Meios de Comunicação</h6>
+                     <a href="https://www.facebook.com/" class="brand-logo"><img src="imagens/facebook.png" width="40"></a>
+                     <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="40"></a>
+                     <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="40"></a>
+                     <a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="40"></a>
+                     <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="40"></a>
+
+                     <br>
+
+                    <ul >
+                   
+                      
+                      <ul>
+                        <li><a href="cafes.html" class="waves-effect waves-light  white-text">Cafés</a></li>
+                        
+                        <li><a href="capsulas.html" class="waves-effect waves-light white-text">Cápsulas</a></li>
+                        
+                        <li><a href="sobremesas.html" class="waves-effect waves-light white-text">Sobremesas</a></li>
+                        
+                        <li><a href="sucos.html" class="waves-effect waves-light white-text">Sucos</a></li>
+                        
+    
+                      </ul>
+                  </div>
+
+            </div>
+            
+        </div>
+          
+        <div class="footer-copyright" style="background-color:#42210B;">
+           
+            <div class="container">
+                <span>
+                © 2020 Copyright Jhenifer Teixeira
+               </span>
+                              
+            </div>
+            
+        </div>
+          
+    </footer>
+        
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/materialize.min.js"></script>
+        

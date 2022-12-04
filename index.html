@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Macieul's Coffee</title>
+    <link rel="shortcut icon" href="imagens/icon.png" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+     
+      <script>
+		  
+		    $(function() {
+			  $(window).on("scroll", function() {
+				if($(window).scrollTop() > 30) {
+				  $(".sidebar-wrapper").addClass("novacor");
+				} else {
+				  $(".sidebar-wrapper").removeClass("novacor");
+				}
+			  });
+			});
+
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+          });
+        
+            $(document).ready(function(){
+                $('.modal').modal();
+              });
+        
+          $('#textarea1').val('New Text');
+              M.textareaAutoResize($('#textarea1'));
+                    $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+          });
+       
+        
+    </script>
+    
+    <script type="text/javascript">
+
+             $(document).ready(function(){
+                 
+              $('.slider').slider({full_width: true});
+                 
+             });
+        
+
+        
+            $(document).ready(function(){
+
+                $('.slider').slider({ 
+                    full_width: true,
+                    height : 550, // default - height : 400
+                    interval: 7000 // default - interval: 6000
+                });
+
+            });
+
+              $(document).ready(function(){
+                $('.tooltipped').tooltip();
+              });
+            
+    </script>
+    
+    <script>    
+            
+            $(document).ready(function(){
+                $('.parallax').parallax();
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('.dropdown-trigger').dropdown();
+                $('.fixed-action-btn').floatingActionButton();
+            });
+            
+             $('.carousel').carousel({
+                fullWidth: true,
+                indicators: true
+              });
+        
+            
+    </script>
+    
+    <div id="modal1" class="modal">
+    
+		<div class="modal-content">
+
+			<a href="#!" class=" right modal-close waves-effect waves-green btn-flat">
+			<span class="material-icons">close</span></a>
+			<h4>Envie-nos uma mensagem</h4>
+			<p>Preencha os campos abaixo</p>
+
+			<div class="row">
+
+				 <form class="col s12">
+
+					<br>    
+
+					<div class="row">
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix icon-modal">account_circle</i>
+							<input id="input_text" type="text" data-length="10">
+							<label for="input_text">Nome</label>
+						</div>
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix icon-modal">email</i>
+							<input id="email" type="email" class="validate" required>
+							<label for="email">Email</label>
+							<span class="helper-text" data-error="Digite um e-mail válido" data-success="E-mail válido"></span>
+						</div>
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix icon-modal">comment</i>
+							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<label for="textarea1">Mensagem</label>
+						</div>
+
+					  </div>
+
+				</form>
+
+			</div>
+
+				<button class="btn btn-small waves-effect waves-light btn-envio" type="submit" name="action">Enviar
+				</button>
+				<br>
+
+		</div>
+   
+</div>
+
+
+<div class="row hide-on-small-only" style="background-color:#fff; margin:0px!important; font-size:11px;">
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	Atendimento delivery
+      </div>
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	<span class="material-icons icons">airport_shuttle</span>Entregas para Lins e região
+      </div>
+      
+      <div class="col s3 l4 hide-on-med-and-down" style="margin-top:0.4em!important;">
+      
+          <a href="https://www.facebook.com/" class="brand-logo" ><img src="imagens/facebook.png" width="22"></a>
+          <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="22"></a>
+          <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="22"></a><a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="22"></a>
+          <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="22"></a>
+                     
+      </div>
+      
+</div>
+
+
+<div class=" navbar-fixed">
+       
+       <nav class=" sidebar-wrapper z-depth-0 transparent">
+
+            <div class="nav-wrapper transparent z-depth-0">
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-menu" style="font-size:40px!important;">menu</i></a>
+  
+               <ul class="right hide-on-med-and-down">
+                   
+                     <li><a href="#" class="disable" style="font-size:28px; margin-right:-15px;">|</a></li>
+                     <li><a href="login.html" class="waves-effect waves-light" ><span class="material-icons icon-login">person</span></a></li>                        
+                </ul>
+                  
+                <ul class="right hide-on-med-and-down">
+                   
+                     <!-- Dropdown Trigger -->
+                    <li><a href="index.html" class="waves-effect waves-light" ><span class="material-icons icons">home</span>Início</a></li>
+
+                     <li><a href="capsulas.html" class="waves-effect waves-light" ><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+                      <a class='dropdown-trigger btn btn-p waves-effect waves-light transparent' href='#' data-target='dropdown1'>CARDÁPIO</a>
+                        
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                         
+                 	  </ul>
+                     
+                </ul>
+                
+                 
+          <ul class="left img-logo">
+            
+            <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="200" class="responsive-img"></a>
+            
+          </ul>
+        
+
+           <ul class="left  hide-on-med-and-down cf">
+            
+              <div class="row">
+                  <div class="col s12" >
+                      <div class="row" id="topbarsearch">
+                          <div class="input-field col s12 white-text">
+                              <i class="white-text material-icons prefix icon-search">search</i>
+                                  <input type="text" placeholder="Procurar" id="autocomplete-input" class="autocomplete white-text " >
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+            
+            </ul>
+        
+         </div>
+         
+       </nav>
+      
+		<ul class="sidenav" id="mobile-demo">
+               
+						<li><a href="index.html"class="waves-effect waves-light brown-text" ><span class="material-icons icons">home</span>Início</a></li>
+						<li class="divider" tabindex="-1"></li>
+						<li><a href="login.html" class="waves-effect waves-light brown-text" ><span class="material-icons icons">person</span>Login</a></li>
+						<li class="divider" tabindex="-1"></li>
+						 <li><a href="capsulas.html" class="brown-text "><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+						 <li class="divider" tabindex="-1"></li>
+						  
+						  <li class="btn-p2">CARDÁPIO</li>
+						  <li class="divider" tabindex="-1"></li>
+                       
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+		</ul>
+                    
+</div> 
+
+
+<div class="slider">
+	
+	         <ul class="slides">
+             
+                <li>
+                    <img src="imagens/4.jpg" class="responsive-img">
+
+                </li>
+                
+                
+                <li>  
+                    <img src="imagens/8.jpg"> 
+
+                    <div class="caption left-align m">
+                 		<h3>Conheça as especialidades</h3>
+                        <h4 class="light grey-text text-lighten-3">da Macieul's Coffee!</h4>
+                        <h6 class="light grey-text text-lighten-3">Atendimento via delivery</h6>
+                    </div>
+                </li>
+                
+                <li>
+                    <img src="imagens/c.jpg"> 
+                    
+                    <div class="caption left-align m">
+                      <h3>A vida é mais doce</h3>
+                      <h4 class="light grey-text text-lighten-3">Depois de um bom café amargo!!</h4>
+                    </div>
+                </li>
+             
+            </ul>
+
+</div>
+
+
+<div class="cont">
+	
+	<section id="pag3">
+        
+  <br>
+  <hr>
+  <br>
+  
+  		<div class="row">
+  			
+  			<h5 class="titulo">Confira as variedades de Macieul's Coffee!</h5>
+  			
+  			<p class="subtit">A macieul's Coffee foi criada para aqueles clientes que desejam tranquilidade e um ambiente aconchegante, nos mais diversos momentos do dia. 
+Contamos com um delicioso cardápio variado, que atende a todos os gostos e horários do seu dia, proporcionando uma experiência cheia de sabór e alegria para o seu paladar .
+Venha nos visitar, ou faça seu pedido online e descubra os prazeres de um café fresquinho, ou entre outras variedades que oferemos que são feitas sempre com muito amor.</p>
+ 		
+ 			<div class="col s12 m6 l6 xl6">
+				<img src="imagens/Cafeteria1.jpg" alt="" class="responsive-img" width="700">
+		   </div>
+
+		   <div class="col s12 m6 l6 xl6">
+				<img src="imagens/Cafeteria2.jpg" alt="" class="responsive-img hide-on-small-only" width="700">
+		   </div>
+		   
+		   <br>
+		   <br>
+		   
+		</div>
+		
+		
+		<div class="row">
+			
+			<hr>
+			<br>
+			
+			<h5 class="titulo">Especialidades</h5>
+   		
+    		<p class="subtit">Com a especialidade voltada para cafés, sobremesas e drinks. Os cafés não ficam de fora do menu e apresentam deliciosas opções. Os espressos e as bebidas quentes utilizam o blend da marca italiana Lavazza, com grãos moídos na hora, além de opções de bebidas geladas. Uma das coisas que atrai os olhos de quem passa pelo Macieul's Coffee, além do charme característico, são os doces e receitas caseiras. A opção é perfeita para apreciar aquele café durante a tarde em boas companhias.</p>
+			
+			<div class="col s12" style="margin-top:40px;">
+				 <ul class="tabs">
+					 <li class="tab col s6"><a class="active black-text " href="#img-cafes" style="background-color:#F2E8C9;  font-weight:600; font-size: 1.0em;"> CAFÉS PREFERIDOS</a></li>
+					 <li class="tab col s6"><a class="black-text" href="#img-cafes2" style="background-color:#F2E8C9;  font-weight:600; font-size: 1.0em;">OUTROS</a></li>
+				 </ul>
+			</div>
+        
+        	<div id="img-cafes" class="col s12">
+
+				<div class="col s6 m3 l3" style="margin:0px;">
+					  <div class="img-container">
+						  <img src="imagens/cafes/expresso.jpg" alt="" class="responsive-img" id="passar_mouse">
+						  <div id="mostrar">  
+							<a class="waves-effect waves-light btn-small btn-mais" style="margin-top:20px;">Ver mais..</a> 
+						  </div>
+					  </div>
+
+					 <div class="collapsible-header" style="cursor: context-menu;">
+						  <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes">Expresso</span>
+					 </div>
+			  	</div>
+			  	
+			  	
+			 <div class="col s6 m3 l3" style="margin:0px;">
+				   <div class="img-container">
+					  <img src="imagens/cafes/expressoduplo.jpg" alt="" class="responsive-img">
+				   </div>
+       
+                   <div class="collapsible-header" style="cursor: context-menu;">
+                       <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes">Expresso duplo</span>
+                   </div>             
+          	 </div>
+             
+             
+             <div class="col s6 m3 l3" style="margin:0px;">
+				   <div class="img-container">
+					  <img src="imagens/cafes/lattemacchiato.jpg" alt="" class="responsive-img">
+				   </div>
+       
+                   <div class="collapsible-header" style="cursor: context-menu;">
+                       <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes">Latte Machiato</span>
+                   </div>             
+          	 </div>
+          	 
+          	 
+          	 <div class="col s6 m3 l3" style="margin:0px;">
+				  <div class="img-container">
+					  <img src="imagens/cafes/cappuccino.jpg" alt="" class="responsive-img">
+				  </div>
+           
+                  <div class="collapsible-header" style="cursor: context-menu;">
+					   <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes">Capuccino</span>
+                  </div>
+         	 </div>
+		    <br>
+         	<a href="cafes.html" class="waves-effect waves-light btn-small btn-mais" style="margin-top:30px;">Ver mais..</a>
+         	
+			</div>
+			
+			
+			
+			<div id="img-cafes2" class="col s12">
+              
+				<div class="row">
+					
+					 <div class="col s6 m3 l3" style="margin:0px;">
+						  <div class="img-container">
+							  <img src="imagens/cafes/mocha.jpg" alt="" class="responsive-img">
+						  </div>
+
+						  <div class="collapsible-header" style="cursor: context-menu;">
+							  <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes">Mocha</span>
+						  </div>
+					  </div>
+
+
+					  <div class="col s6 m3 l3" style="margin:0px;">
+						  <div class="img-container">
+							  <img src="imagens/cafes/breve.jpg" alt="" class="responsive-img">
+						  </div>
+
+						  <div class="collapsible-header" style="cursor: context-menu;">
+							  <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes"> Breve</span>
+						  </div>
+					 </div>
+
+
+					 <div class="col s6 m3 l3" style="margin:0px;">
+						  <div class="img-container">
+							  <img src="imagens/cafes/cafecremoso.jpg" alt="" class="responsive-img">
+						  </div>
+
+						  <div class="collapsible-header" style="cursor: context-menu;">
+							  <i class="material-icons yellow-text text-lighten-2">star</i> <span class="titulo-cafes">Café Cremoso</span>
+						  </div>
+					  </div>
+
+
+					  <div class="col s6 m3 l3" style="margin:0px;">
+						  <div class="img-container">
+							  <img src="imagens/cafes/cafeamericano.jpg" alt="" class="responsive-img">
+						  </div>
+
+						  <div class="collapsible-header" style="cursor: context-menu;">
+							   <i class="material-icons yellow-text text-lighten-2">star</i><span class="titulo-cafes">Café Americano</span>
+						  </div>	 
+					  </div>
+					<br>
+					<a href="cafes.html" class="waves-effect waves-light btn-small btn-mais" style="margin-top:30px;">Ver mais..</a>
+
+				</div>
+				
+			</div>
+
+       </div> 
+		
+  
+	</section> 
+	
+	<hr>
+	
+	
+	 <div class="row">
+    
+     <br>
+
+            <div style="background-color:#F2E8C9; padding:3px; margin-top:5px; text-align:left;">
+            	<h5 style="margin:10px;" class="titulo">CÁPSULAS</h5>
+            </div>
+            
+            <br>      
+                           
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true, "freeScroll": true, "autoPlay": true, "fullscreen": true, "lazyLoad": 2 }'>
+               
+					<img class="carousel-image"
+					data-flickity-lazyload="imagens/capsulas/3c1.png" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/capsulas/3c2.png" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/capsulas/c1.png" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/capsulas/c2.png" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/capsulas/starbucks5.png" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/capsulas/starbucks6.png" />
+
+              </div>
+              <br>
+              <a href="capsulas.html" class="waves-effect waves-light btn-small btn-mais" style="margin-top:30px;">Ver mais..</a>
+
+
+     </div>
+     
+     
+     <div class="row">
+     
+     <br>
+                       
+				<div style="background-color:#F2E8C9; padding:3px; margin-top:5px; text-align:left;">
+					<h5 style="margin:10px;" class="titulo">BOLOS</h5>
+				</div>
+				
+				<br>          
+							<!-- Flickity HTML init -->
+				<div class="carousel" data-flickity='{ "wrapAround": true, "freeScroll": true, "autoPlay": true, "fullscreen": true, "lazyLoad": 2 }'>
+						<img class="carousel-image"
+						  data-flickity-lazyload="imagens/bolo-de-morango.jpg" />
+
+						<img class="carousel-image"
+						  data-flickity-lazyload="imagens/bolo-de-cafe.jpg" />
+
+						<img class="carousel-image"
+						  data-flickity-lazyload="imagens/bolo-de-coco.jpg" />
+
+						<img class="carousel-image"
+						  data-flickity-lazyload="imagens/bolo-de-brigadeiro.jpg" />
+
+						<img class="carousel-image"
+						  data-flickity-lazyload="imagens/bolo-de-cenoura.jpg" />
+
+						<img class="carousel-image"
+						  data-flickity-lazyload="imagens/bolo-de-fuba.jpg" />
+
+				</div>
+
+				<a href="sobremesas.html" class="waves-effect waves-light btn-small btn-mais">Ver mais..</a>
+
+	 </div>
+	 
+	 
+	 <div class="row">
+     <br>
+                                
+             <div style="background-color:#F2E8C9; padding:3px; margin-top:5px; text-align:left;">
+             	<h5 style="margin:10px;" class="titulo">SUCOS</h5>
+             </div>
+             
+             <br>          
+                        <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true, "freeScroll": true, "autoPlay": true, "fullscreen": true, "lazyLoad": 2 }'>
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoMorango.jpg" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoLaranja.jpg" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoCenoura.jpg" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoVerde.jpg" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoBeterraba.jpg" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoMelancia.jpg" />
+
+					<img class="carousel-image"
+					  data-flickity-lazyload="imagens/sucoAbacaxi.jpg" />
+
+            </div>
+            
+            <a href="sucos.html" class="waves-effect waves-light btn-small btn-mais">Ver mais..</a>
+           
+     </div>
+    
+    <br>   
+    <hr>
+    <br>  
+             
+	
+	<div class="row">    
+        
+        <h5 class="titulo">Sobre de Macieul's Coffee!</h5>
+        <br>
+        
+        <div class="col s12 l7 m7" style="margin-top:20px; margin-bottom:30px;">
+            
+            <span class="tit" style="margin-left: 2%;">CAFÉ DIRETO DO PRODUTOR</span>
+            <h6 class="subtit" style="margin-left: 2%;">Você compra seus cafés direto de produtores de todo Brasil que enviam com o máximo de frescor direto para você. Na Macieul's Coffee promovemos a venda direta, porque acreditamos no mercado justo.</h6>
+             
+               <br>          
+
+            <span class="tit" style="margin-left: 2%;">SEMPRE ESPECIAL E FRESQUINHO</span>
+            <h6 class="subtit" style="margin-left: 2%;">Você ainda encontra a maior variedade de cafés especiais, muitos exclusivos e com garantia de qualidade.Na Macieul's Coffee devolvemos todo o seu dinheiro se o café enviado não for padrão especial.</h6>
+
+        </div>
+        
+        <div class="col s12 l5 m5" style="margin-top:20px; margin-bottom:30px; ">
+            
+            <img src="imagens/cafe.png" alt="">
+                       
+        </div>
+        
+    </div>
+    
+    <hr>
+    
+    <br>
+        
+    <div class="row">
+       
+    	<h5 class="titulo">Informações extras</h5>
+        <br>
+        
+        <div class="col s12 l6 m12 ">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">
+                  <img src="imagens/cafe.jpg" alt="" class="circle" width="50">
+					  <h6 class="titulo-extra">Origem do Café</h6>
+                  </div>
+					  <div class="collapsible-body">
+					  <h6 class="subtit">A história do café começou no século IX. O café é originário das terras altas da Etiópia (possivelmente com culturas no Sudão e Quênia) e difundiu-se para o mundo através do Egito e da Europa.
+
+	Mas, ao contrário do que se acredita, a palavra “café” não é originária de Kaffa, local de origem da planta, e sim da palavra árabe qahwa, que significa “vinho”, devido à importância que a planta passou a ter para o mundo árabe.
+
+	Uma lenda conta que um pastor chamado Kaldi observou que seus carneiros ficavam mais espertos ao comer as folhas e frutos do cafeeiro.
+
+	Ele experimentou os frutos e sentiu maior vivacidade. Um monge da região, informado sobre o fato, começou a utilizar uma infusão de frutos para resistir ao sono enquanto orava.</h6>
+					  </div>
+                 </li>
+                
+                 <li>         
+                  <div class="collapsible-header">
+					  <img src="imagens/cafe-de-qualidade.jpg" alt="" class="circle" width="50">
+					  <h6 class="titulo-extra">O que gera um café de qualidade?</h6>
+				  </div>
+                  <div class="collapsible-body">
+					  <h6 class="subtit">
+						Além de certos tipos que geram aromas e sabores mais ricos, o plantio e a colheita também têm bastante influência. Um café que é colhido fora de época, por exemplo, não terá tanta qualidade quanto aquele que foi colhido no momento adequado. Além disso, a realização cuidadosa das etapas após a colheita (como a secagem dos grãos) também influencia na qualidade. No momento do preparo, em termos de café coado, o filtro utilizado tem influência também. “O filtro de papel, por exemplo, é um filtro que retém mais as micropartículas do pó de café do que o coador de pano. O coador de pano, portanto, sempre produz um café mais encorpado”, afirma Nathan. Mas isso depende do gosto de cada um!
+					  </h6>
+                  </div>
+                </li>
+              </ul>
+        </div>
+        
+        <div class="col s12 l6 m12">
+              <ul class="collapsible">
+					<li>
+						  <div class="collapsible-header">
+						  <img src="imagens/blend.jpg" alt="" class="circle" width="50">
+							  <h6 class="titulo-extra">O que é um blend de café?</h6>
+						  </div>
+
+					  <div class="collapsible-body">
+						<h6 class="subtit">O termo do inglês significa nada mais que “mistura”. Ou seja, blends são combinações planejadas de diversos grãos de café para criar um resultado na xícara do modo como desejar. Pode-se fazer essa mesclagem antes ou depois de torrar o café, mas teremos um tópico só pra isso mais a frente.</h6>
+					  </div>
+					</li>
+
+					<li>
+					  <div class="collapsible-header">
+					  <img src="imagens/cafegourmet.jpg" alt="" class="circle" width="50">
+					  <h6 class="titulo-extra">Propriedades e benefícios do café</h6>
+					  </div>
+						  <div class="collapsible-body">
+							<h6 class="subtit">O café possui uma série de propriedades medicinais, como:
+							inibição de apetite;
+							cardio-estimulantes;
+							diuréticas;
+							laxativas;
+							relaxantes musculares;
+							vasoconstritoras.
+							Além disso, é capaz de diminuir os sintomas da constipação intestinal, fadiga, enxaqueca, asma, obesidade e paralisia, além de aliviar dores. O café é usado também para potencializar o efeito de outras substâncias presentes  no corpo, proporcionando uma enorme sensação de bem estar.Também melhora a congestão respiratória, abre as passagens bronquiais e acelera o metabolismo, levando à perda de peso, já que aumenta o número de calorias queimadas. Outra propriedade importante do café é estimular o fígado e a limpeza do intestino.</h6>
+						  </div>
+					</li>
+              </ul>
+        </div>
+        
+    </div> 
+    
+    
+         <div class="row">   
+         <br> 
+            
+            <div class="col s12 l6 m6" style="margin-top:3%;">
+               
+                <h6 class="txt">Rua Padre Vicente Rizzo, 670 Vila Sfeir - Lins/SP</h6>
+                
+                <h6 class="txt">euquerocafe@macieulscoffee.com.br</h6>
+                
+				<h6 class="txt">(14) 3534-0000</h6>
+                
+                <h6 class="txt">@macieulscoffee</h6>
+                 
+                <h6 class="txt">Macieul's Coffee</h6>
+                
+                <br>
+                
+            </div>
+            
+            
+            <div class="col s12 l6 m6" class="mapa efeito-mapa" style="margin-top:4%;">
+
+            	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.7425140511154!2d-49.76062658600323!3d-21.67387148565247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15ccba1c8ffd%3A0x1ee04a6f817cf3f4!2zQ2Fmw6kgY29tIFDDo28!5e0!3m2!1spt-PT!2sbr!4v1605213592549!5m2!1spt-PT!2sbr" width="80%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+            
+     	</div> 
+            
+  </div>
+                 
+        <div class="fixed-action-btn" >
+              <a class="btn-floating btn-large pulse tooltipped modal-trigger" data-position="left" data-tooltip="Envie uma mensagem" style="background-color:rgba(204, 174, 98,1.0);" href="#modal1">
+                <i class="large material-icons">comment</i>
+              </a>
+              
+              <ul>
+                <li>
+                	<a class="btn-floating btn-large  tooltipped" data-position="left" data-tooltip="Faça seu pedido online" style="background-color:rgba(204, 174, 98,1.0);" href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1" target="_blank"><i class="material-icons">call</i></a>
+                </li>
+              </ul>
+        </div>
+            
+        <br>
+        <br>
+        
+        
+    <footer class="page-footer" style="background-color:#0D0D0D;">
+         
+        <div class="container">
+           
+            <div class="row">
+
+                  <div class="col l6 s12" style="margin-top:5%;">
+                        <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="150" ></a>
+                        <h5 class="white-text">The Best Coffee</h5>
+                        <p class="grey-text text-lighten-4">Conheça as especialidades da Macieul's Coffee!</p>
+                        <br>
+                  </div>
+
+                  <div class="col l4 offset-l2 s12">
+						<h6 class="white-text">Meios de Comunicação</h6>
+						 <a href="https://www.facebook.com/" class="brand-logo"><img src="imagens/facebook.png" width="40"></a>
+						 <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="40"></a>
+						 <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="40"></a>
+						 <a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="40"></a>
+						 <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="40"></a>
+
+						 <br>
+
+						  <ul>
+								<li><a href="cafes.html" class="waves-effect waves-light  white-text">Cafés</a></li>
+								<li><a href="capsulas.html" class="waves-effect waves-light white-text">Cápsulas</a></li>
+								<li><a href="sobremesas.html" class="waves-effect waves-light white-text">Sobremesas</a></li>
+								<li><a href="sucos.html" class="waves-effect waves-light white-text">Sucos</a></li>					          
+						  </ul>  
+                  </div>
+
+            </div>
+            
+        </div>
+          
+        <div class="footer-copyright" style="background-color:#42210B;">  
+            <div class="container">
+                <span>
+                	© 2020 Copyright Jhenifer Teixeira
+               </span>               
+            </div>            
+        </div>
+          
+    </footer>
+             
+
+
+</body>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/materialize.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</html>

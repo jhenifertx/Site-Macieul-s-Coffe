@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Macieul's Coffee</title>
+    <link rel="shortcut icon" href="imagens/icon.png" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+        <style>
+            .titul{
+                color: #0B3B39;
+                font-weight: 500;
+				font-size: 1.3em;
+            }
+        </style>
+        
+        
+            <script>
+		   
+        $(function() {
+          $(window).on("scroll", function() {
+            if($(window).scrollTop() > 30) {
+              $(".sidebar-wrapper").addClass("novacor");
+            } else {
+              $(".sidebar-wrapper").removeClass("novacor");
+            }
+          });
+        });
+       
+        
+         $(document).ready(function(){
+            $('.collapsible').collapsible({
+              accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+          });
+        
+            $(document).ready(function(){
+                $('.modal').modal();
+              });
+        
+          $('#textarea1').val('New Text');
+              M.textareaAutoResize($('#textarea1'));
+                    $(document).ready(function() {
+                $('input#input_text, textarea#textarea2').characterCounter();
+          });
+       
+        
+    </script>
+    
+    <script type="text/javascript">
+		
+		    $(document).ready(function(){
+				$('.tooltipped').tooltip();
+                $('.parallax').parallax();
+                $('.sidenav').sidenav();
+                $('.tabs').tabs();
+                $('.dropdown-trigger').dropdown();
+                $('.fixed-action-btn').floatingActionButton();
+				 $('.slider').slider({full_width: true});
+            });
+            
+             $('.carousel').carousel({
+                fullWidth: true,
+                indicators: true
+              });
+
+        
+            $(document).ready(function(){
+
+                $('.slider').slider({ 
+                    full_width: true,
+                    height : 320, // default - height : 400
+                    interval: 7000 // default - interval: 6000
+                });
+
+            });
+            
+    </script>
+    
+    <script>    
+            
+
+        
+            
+    </script>
+    
+    
+  <div id="modal1" class="modal">
+    
+    <div class="modal-content">
+    
+        <a href="#!" class=" right modal-close waves-effect waves-green btn-flat">
+        <span class="material-icons">close</span></a>
+        <h4>Envie-nos uma mensagem</h4>
+        <p>Preencha os campos abaixo</p>
+       
+        <div class="row">
+        
+             <form class="col s12">
+
+                <br>    
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">account_circle</i>
+                        <input id="input_text" type="text" data-length="10">
+                        <label for="input_text">Nome</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">email</i>
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Digite um e-mail válido" data-success="E-mail válido"></span>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix icon-modal">comment</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Mensagem</label>
+                    </div>
+
+                  </div>
+
+              </form>
+        
+        </div>
+      
+            <button class="btn btn-small waves-effect waves-light btn-envio" type="submit" name="action">Enviar
+            </button>
+            <br>
+   
+    </div>
+   
+    
+</div>
+
+
+    <div class="row hide-on-small-only" style="background-color:#fff; margin:0px!important; font-size:11px;">
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	Atendimento delivery
+      </div>
+     
+      <div class="col s3 l4  hide-on-med-and-down" style="margin-top:0.6em!important;">
+      	<span class="material-icons icons">airport_shuttle</span>Entregas para Lins e região
+      </div>
+      
+      <div class="col s3 l4 hide-on-med-and-down" style="margin-top:0.4em!important;">
+      
+          <a href="https://www.facebook.com/" class="brand-logo" ><img src="imagens/facebook.png" width="22"></a>
+          <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="22"></a>
+          <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="22"></a><a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="22"></a>
+          <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="22"></a>
+                     
+      </div>
+      
+    </div>
+    
+    
+    <div class=" navbar-fixed">
+       
+        <nav class=" sidebar-wrapper z-depth-0 transparent">
+
+            <div class="nav-wrapper transparent z-depth-0">
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-menu" style="font-size:40px!important;">menu</i></a>
+  
+               
+               <ul class="right hide-on-med-and-down">
+                   
+                     <li><a href="#" class="disable" style="font-size:28px; margin-right:-15px;">|</a></li>
+                     <li><a href="login.html" class="waves-effect waves-light" ><span class="material-icons icon-login">person</span></a></li>                        
+                </ul>
+                  
+                <ul class="right hide-on-med-and-down">
+                   
+                     <!-- Dropdown Trigger -->
+                    <li><a href="index.html" class="waves-effect waves-light" ><span class="material-icons icons">home</span>Início</a></li>
+
+                     <li><a href="capsulas.html" class="waves-effect waves-light" ><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+                      <a class='dropdown-trigger btn btn-p waves-effect waves-light transparent' href='#' data-target='dropdown1'>CARDÁPIO</a>
+                        
+                      <!-- Dropdown Structure -->
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+    
+                      </ul>
+                     
+                </ul>
+                 
+          <ul class="left img-logo">
+            
+            <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="200" class="responsive-img"></a>
+            
+          </ul>
+        
+
+           <ul class="left  hide-on-med-and-down cf">
+            
+              <div class="row">
+                  <div class="col s12" >
+                      <div class="row" id="topbarsearch">
+                          <div class="input-field col s12 white-text">
+                              <i class="white-text material-icons prefix icon-search">search</i>
+                                  <input type="text" placeholder="Procurar" id="autocomplete-input" class="autocomplete white-text " >
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+            
+           </ul>
+        
+         </div>
+         
+      </nav>
+      
+		<ul class="sidenav" id="mobile-demo">
+               
+						<li><a href="index.html"class="waves-effect waves-light brown-text" ><span class="material-icons icons">home</span>Início</a></li>
+						<li class="divider" tabindex="-1"></li>
+						<li><a href="login.html" class="waves-effect waves-light brown-text" ><span class="material-icons icons">person</span>Login</a></li>
+						<li class="divider" tabindex="-1"></li>
+						 <li><a href="capsulas.html" class="brown-text "><span class="material-icons icons">local_cafe</span>Cápsulas</a></li>
+						 <li class="divider" tabindex="-1"></li>
+						  
+						  <li class="btn-p2">CARDÁPIO</li>
+						  <li class="divider" tabindex="-1"></li>
+                       
+                        <li><a href="cafes.html" class="waves-effect waves-light  brown-text"><span class="material-icons icons">local_cafe</span>Cafés</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sobremesas.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">cake</span>Sobremesas</a></li><li class="divider" tabindex="-1"></li>
+                        <li><a href="sucos.html" class="waves-effect waves-light brown-text"><span class="material-icons icons">local_bar</span>Sucos</a></li><li class="divider" tabindex="-1"></li>
+                        
+		</ul>
+                
+        
+</div> 
+      
+       
+        <div class="slider">
+           
+            <ul class="slides">
+             
+                <li>
+                    <img src="imagens/4.jpg" class="responsive-img">                  
+                </li>
+                
+                <li>  
+                    <img src="imagens/8.jpg"> 
+                </li>
+                
+                <li>
+                    <img src="imagens/c.jpg"> 
+                </li>
+             
+            </ul>
+            
+        </div>
+        
+    
+  <div class="cont">
+   
+   <br>
+    <hr>
+    
+    
+<section id="pag1">
+  
+        <div class="row">
+              
+            <div id="login" class="col s12 m12 l6" style="padding:30px;">
+               
+                            <div class="col s12 m12 l12" style="background-color:#F2E8C9; padding:3px; margin-top:5px;"><h5 class="titul">LOGIN</h5></div>
+
+                <br>
+                 <div class="row">
+                    <form class="col s12" >
+
+                      <div class="row">
+                       
+                       <div class="input-field col s12">
+                          <input id="emaill" type="email" class="validate">
+                          <label for="emaill">Email</label>
+                        </div>
+                        
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate">
+                          <label for="password">Password</label>
+                        </div>
+                        
+
+                          <label class="left" style="padding:10px;">
+                           <input type="checkbox" class="filled-in checkbox-orange"/>
+                            <span>Lembrar senha</span>
+                          </label>
+                       
+
+                      </div>
+                      
+                    <a class="waves-effect waves-light btn-small teal darken-4" >ENTRAR</a>
+
+                    </form>
+                  </div>
+                
+            </div>
+            
+            <div id="cadastro" class="s12 m6 l6" style="padding:30px;">
+              
+                <div class="col s12 m12 l6" style="background-color:#F2E8C9; padding:3px; margin-top:5px; "><h5 class="titul">CADASTRO</h5></div>
+                <br>
+                 <div class="row">
+                    <form class="col s12 l6">
+                      <div class="row">
+                       
+                        <div class="input-field col s12 ">
+                          <input id="nome" type="text" class="validate">
+                          <label for="nome">Nome Completo</label>
+                        </div>
+                        
+                        <div class="input-field col s12 ">
+                          <input id="emailc" type="email" class="validate">
+                          <label for="emailc">Email</label>
+                        </div>
+                        
+                      </div>
+                
+                      <div class="row">
+                       
+                       <div class="input-field col s12">
+                          <input type="text" class="datepicker" id="data">
+                          <label for="data">Data de nascimento</label>
+                        </div>
+                        
+                        <div class="input-field col s12 ">
+                          <input id="passwordc" type="password" class="validate">
+                          <label for="passwordc">Password</label>
+                        </div>
+                        
+                      </div>
+                      <a class="waves-effect waves-light btn-small teal darken-4">CADASTRAR</a>      
+                    </form>
+                  </div>
+                
+            </div>
+            
+        </div>
+      
+</section>
+   
+   
+   
+   
+   
+    
+    <br>   
+                    
+  <hr>
+       
+ 
+                              
+</div>         
+             
+ 
+        <div class="fixed-action-btn" >
+              <a class="btn-floating btn-large pulse tooltipped modal-trigger" data-position="left" data-tooltip="Envie uma mensagem" style="background-color:rgba(204, 174, 98,1.0);" href="#modal1">
+                <i class="large material-icons">comment</i>
+              </a>
+              
+              <ul>
+                <li>
+                	<a class="btn-floating btn-large tooltipped" data-position="left" data-tooltip="Faça seu pedido online" style="background-color:rgba(204, 174, 98,1.0);" href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1" target="_blank"><i class="material-icons">call</i></a>
+                </li>
+              </ul>
+        </div>
+              
+               
+    <footer class="page-footer" style="background-color:#0D0D0D;">
+         
+        <div class="container">
+           
+            <div class="row">
+
+                  <div class="col l6 s12" style="margin-top:5%;">
+                        <a href="#!" class="brand-logo"><img src="imagens/lg2.png" width="150" ></a>
+                        <h5 class="white-text">The Best Coffee</h5>
+                        <p class="grey-text text-lighten-4">Conheça as especialidades da Macieul's Coffee!</p>
+                        <br>
+                  </div>
+
+                  <div class="col l4 offset-l2 s12">
+                    <h6 class="white-text">Meios de Comunicação</h6>
+                     <a href="https://www.facebook.com/" class="brand-logo"><img src="imagens/facebook.png" width="40"></a>
+                     <a href="https://www.instagram.com/" class="brand-logo"><img src="imagens/instagram.png" width="40"></a>
+                     <a href="https://twitter.com/login?lang=pt" class="brand-logo"><img src="imagens/twitter.png" width="40"></a>
+                     <a href="https://api.whatsapp.com/send?phone=5514998406380&text=Ol%C3%A1%20Macieul's%20Coffe" class="brand-logo"><img src="imagens/whats.png" width="40"></a>
+                     <a href="https://br.pinterest.com/" class="brand-logo"><img src="imagens/pin.png" width="40"></a>
+
+                     <br>
+
+                    <ul >
+                   
+                      
+                      <ul>
+                        <li><a href="cafes.html" class="waves-effect waves-light  white-text">Cafés</a></li>
+                        
+                        <li><a href="capsulas.html" class="waves-effect waves-light white-text">Cápsulas</a></li>
+                        
+                        <li><a href="sobremesas.html" class="waves-effect waves-light white-text">Sobremesas</a></li>
+                        
+                        <li><a href="sucos.html" class="waves-effect waves-light white-text">Sucos</a></li>
+                        
+    
+                      </ul>
+                  </div>
+
+            </div>
+            
+        </div>
+          
+        <div class="footer-copyright" style="background-color:#42210B;">
+           
+            <div class="container">
+                <span>
+                © 2020 Copyright Jhenifer Teixeira
+               </span>
+                              
+            </div>
+            
+        </div>
+          
+    </footer>
+        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/materialize.min.js"></script>
+        
